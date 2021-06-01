@@ -1,0 +1,18 @@
+<style>
+  .users{
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+
+
+<h3>users</h3>
+
+<div class="users">
+
+  <div>
+    <app-user *ngFor="let u of users" [user]="u"></app-user>
+  </div>
+
+    <router-outlet></router-outlet>
+</div>
