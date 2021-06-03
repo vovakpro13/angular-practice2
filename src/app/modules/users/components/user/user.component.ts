@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IUser} from "../../../models/IUser";
+import {IUser} from "../../../../models/user";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
@@ -16,8 +16,8 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showDetails(): void{
-    this.router.navigate([ this.user.id], {relativeTo: this.activatedRoute, state:this.user})
+  showPosts(): void{
+    this.router.navigate([ this.user.id], {relativeTo: this.activatedRoute})
   }
 
 }
